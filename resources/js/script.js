@@ -16,12 +16,13 @@ window.onload = function () {
 
 function myFunction() {
  document.getElementById('myDropdown').classList.toggle('show');
-
 }
 
 
 
 /*----------------REGISTRATION FORM VALIDATION---------------*/
+
+
 var userName, email, password, passwordConfirm;
 
 
@@ -34,7 +35,8 @@ function Validate() {
 
 
 
-//REGULAR EXPRESION
+//REGULAR EXPRESSIONS
+  
 
 var regUserName = /^[A-ZČĆŽŠĐ][a-zčćžšđ\.\_\-\d\W]{2,15}$/;
 var regEmail = /^[\w]+[\.\_\-\w\d]*\@[\w]+([\.][\w]+)+$/;
@@ -44,7 +46,6 @@ var regPassword = /^[A-ZČĆŽŠĐa-zčćžšđ\.\_\-\d\W]{2,15}$/;
 
 
 
-   //provera vrednosti iz registracije
    if(!regUserName.test(userName)) {
      document.getElementById('userNameError').style.color = "#ff0000";
      document.getElementById('userNameError').innerHTML = "Username is incorrect!";
@@ -52,6 +53,7 @@ var regPassword = /^[A-ZČĆŽŠĐa-zčćžšđ\.\_\-\d\W]{2,15}$/;
      document.getElementById('userNameError').style.color = "";
      document.getElementById('userNameError').innerHTML = "";
    }
+  
 
    if(!regEmail.test(email)) {
      document.getElementById('emailErrorReg').style.color = "#ff0000";
@@ -60,6 +62,7 @@ var regPassword = /^[A-ZČĆŽŠĐa-zčćžšđ\.\_\-\d\W]{2,15}$/;
      document.getElementById('emailErrorReg').style.color = "";
      document.getElementById('emailErrorReg').innerHTML = ""; 
    }
+  
 
    if(!regPassword.test(password)) {
     document.getElementById('passwordError').style.color = "#ff0000";
@@ -68,6 +71,7 @@ var regPassword = /^[A-ZČĆŽŠĐa-zčćžšđ\.\_\-\d\W]{2,15}$/;
     document.getElementById('passwordError').style.color = "";
     document.getElementById('passwordError').innerHTML = "";
   }
+  
 
   if(!regPasswordConf.test(passwordConfirm)) {
     document.getElementById('passwordErrorConf').style.color = "#ff0000";
@@ -77,6 +81,8 @@ var regPassword = /^[A-ZČĆŽŠĐa-zčćžšđ\.\_\-\d\W]{2,15}$/;
    document.getElementById('passwordErrorConf').innerHTML = "";
  }
 }
+
+
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -97,6 +103,7 @@ function verifyUserName() {
 }
 
 
+
 function verifyEmailReg() {
   email = document.getElementById('emailReg');
   if (email.value == "") {
@@ -108,10 +115,9 @@ function verifyEmailReg() {
     email.style.border = "1px solid #ccc";
     document.getElementById('emailErrorReg').style.color = "";
     document.getElementById('emailErrorReg').innerHTML = "";
-
   }
-
 }
+
 
 
 function verifyPassword() {
@@ -126,6 +132,8 @@ function verifyPassword() {
     document.getElementById('passwordError').innerHTML = "";
   }
 }
+
+
 
 function verifyPasswordConfirm() {
   password = document.getElementById('passwordReg');
@@ -147,17 +155,19 @@ function verifyPasswordConfirm() {
 
 
 
-
 /*----------------JQUERY CODE---------------*/
+
 
 $(document).ready(function() {
 
+ 
 
   /*----------------SCROLL TO BOTTOM BUTTON---------------*/
+  
 
 
   $('.scroll-to-plans').click(function () {
-    $('html, body').animate({scrollTop: $('.section-reservation').offset().top}, 3000);
+    $('html, body').animate({scrollTop: $('.section-reservation').offset().top}, 1000);
     $('.new').hide();
     $('.new').fadeIn(5000);
   });
@@ -169,7 +179,6 @@ $(document).ready(function() {
     $('#scroll').hide();
     $('#scroll').fadeIn(5000);
   });
-
 
 
 
@@ -196,37 +205,14 @@ $(document).ready(function() {
 
 /*----------------SLIDER---------------*/
 
+
 function slideShow() {
+  
   var current = $('.photos .show');
   var next = current.next().length ? current.next() : current.parent().children(':first');
-  
   current.hide().removeClass('show');
   next.fadeIn().addClass('show');
-  
   setTimeout(slideShow, 3000);
 }
 
   slideShow();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

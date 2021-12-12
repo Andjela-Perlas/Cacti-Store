@@ -6,14 +6,20 @@ window.onload = function() {
   document.getElementById('dropbtn').addEventListener('click', myFunction);
 }
 
+
 /*-----------------DROPDOWN MENU------------------*/
+
+
 
 function myFunction() {
   document.getElementById('myDropdown').classList.toggle('show');
-
 }
 
+
+
 /*--------------------FORM VALIDATION------------------*/
+
+
 
 function formConfirm() {
   var formName = document.getElementById('nameBox').value;
@@ -24,8 +30,12 @@ function formConfirm() {
   var dropdown = document.getElementById('find-us');
   var dropCh = dropdown.options[dropdown.selectedIndex].value;
 
+  
+  
   /*---------------------------CHECKBOX----------------------------------*/
 
+  
+  
   var chbCh = "";
   for(var i = 0; i < chb.length; i++) {
     if (chb[i].checked) {
@@ -48,6 +58,7 @@ function formConfirm() {
   document.getElementById('nameError').style.color = "";
   document.getElementById('nameError').innerHTML = "";
 }
+  
 
 if(!regLastName.test(formLastName)) {
  document.getElementById('lastNameError').style.color = "#ff0000";
@@ -56,6 +67,7 @@ if(!regLastName.test(formLastName)) {
   document.getElementById('lastNameError').style.color = "";
   document.getElementById('lastNameError').innerHTML = "";
 }
+  
 
 if(!regEmail.test(formEmail)) {
   document.getElementById('emailError').style.color = "#ff0000";
@@ -65,6 +77,7 @@ else {
   document.getElementById('emailError').style.color = "";
   document.getElementById('emailError').innerHTML = "";
 }
+  
 
 if(dropCh == "0") {
   document.getElementById('dropError').style.color = "#ff0000";
@@ -73,11 +86,13 @@ if(dropCh == "0") {
   document.getElementById('dropError').style.color = "";
   document.getElementById('dropError').innerHTML = "";
 }
-
 }
 
 
+
 /*------------FORM VALIDATION-------------------------*/
+
+
 
 function name() {
   var vrName = document.getElementById('nameBox');
@@ -95,6 +110,7 @@ function name() {
 }
 
 
+
 function lastName() {
  var vrLastName = document.getElementById('lastName');
  if (vrLastName.value == "") {
@@ -108,8 +124,8 @@ else {
   document.getElementById('lastNameError').style.color = "";
   document.getElementById('lastNameError').innerHTML = "";
 }
-
 }
+
 
 
 function email() {
@@ -125,22 +141,4 @@ else{
   document.getElementById('emailError').style.color = "";
   document.getElementById('emailError').innerHTML = "";
 }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

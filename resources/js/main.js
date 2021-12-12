@@ -30,6 +30,6 @@ window.onload = function() {
   e.preventDefault();    
     $('body,html').animate({
         scrollTop : 0                     
-      }, 2000);
+      }, 1000);
   });
 });

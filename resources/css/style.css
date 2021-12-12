@@ -1,5 +1,5 @@
-    
 /*-----------------------BASIC-------------------------------*/
+
 
 * {
     margin: 0;
@@ -25,6 +25,7 @@ body
     margin: 0 auto;
 }
 
+
 .box {
     padding: 1%;
 }
@@ -39,15 +40,18 @@ section {
     clear: both;
 }
 
+
 /* ----------------- HEADINGS ----------------- */
+
+
 h1,
 h2,
 h3,
 h4 {
-
     font-weight: 300;
     text-transform: uppercase;
 }
+
 
 h1 {
     margin-top: 0;
@@ -67,6 +71,7 @@ h2 {
     letter-spacing: 1px;
 }
 
+
 h3 {
     margin-bottom: 20px;
     font-size: 130%;
@@ -84,10 +89,12 @@ h4 {
 
 /* ----------------------HEADER------------------------- */
 
+
 header {
     background-position: center;
     background-size: cover;
 }
+
 
 .header-long {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cacti.jpg);
@@ -98,45 +105,28 @@ header {
     height: 100vh;
 }
 
+
 .header-short,
 .header-reg,
 .header-about {
   height: 60vh;
 }
 
-.header-short {
 
+.header-short {
     background-image: -linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/contactback.jpg);
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/contactback.jpg);
     background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/contactback.jpg);
     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/contactback.jpg);
-
 }
 
-.header-reg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/drinska-regata.jpg);
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/drinska-regata.jpg);
-    background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url(img/drinska-regata.jpg);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url(img/drinska-regata.jpg);
-    
-}
 
-.header-gallery {
-    background-color: #000;
-    height: 50vh;
-}
-
-.header-gallery h1 {
-    margin-bottom: 13%;
-
-}
 
 .header-about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/about4.jpg);
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/about4.jpg);
     background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(img/about4.jpg);
     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url(img/about4.jpg);
-    
 }
 
 
@@ -150,6 +140,8 @@ header {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+
 
 .btn:link,
 .btn:visited,
@@ -169,6 +161,7 @@ input[type=button] {
 }
 
 
+
 .btn:hover,
 .btn:active,
 input[type=button]:hover, 
@@ -176,13 +169,14 @@ input[type=button]:active {
     background-color: #9ACD32;
 }
 
+
+
 .btn-full:link,
 .btn-full:visited,
 input[type=button] {
     background-color:#9ACD32;
     border: 1px solid #9ACD32;
     color: #fff;
-    
 }
 
 
@@ -192,17 +186,22 @@ input[type=button] {
     border: 1px solid #9ACD32;
 }
 
+
+
 .btn-ghost:link,
 .btn-ghost:visited  {
     border: 1px solid #9ACD32;
     color: #9ACD32;
 }
 
+
+
 .btn-ghost:hover,
 .btn-ghost:active  {
  border: 1px solid #9ACD32;
  color: #fff;
 }
+
 
 
 .logo {
@@ -213,7 +212,6 @@ input[type=button] {
 }
 
 
-/*KRAJNJA VERZIJA*/
 
 .nav-icon {
     color: #fff;
@@ -224,10 +222,14 @@ input[type=button] {
     margin-left: 15px;
 }
 
+
+
 .dropdown {
     float: right;
     display: inline-block;
 }
+
+
 
 .dropdown-content {
    display: none;
@@ -247,9 +249,8 @@ input[type=button] {
     list-style: none;
     margin: 0;
     padding: 0;
-
-
 }
+
 
 
 .dropdown-content li {
@@ -257,8 +258,8 @@ input[type=button] {
     border-bottom: 1px solid #636366;
     line-height: 40px;
     padding: 3px 80px 3px 30px;
-
 }
+
 
 
 .dropdown-content li a {
@@ -270,11 +271,12 @@ input[type=button] {
 }
 
 
+
 .dropdown-content li a:hover {
  color: #9ACD32;
  transition: 0.2s;
-
 }
+
 
 
 .show {
@@ -283,8 +285,8 @@ input[type=button] {
 
 
 
-
 /* --------------------SECTION-TEXT--------------------------- */
+
 
 
 .paragraph-view, 
@@ -292,8 +294,8 @@ input[type=button] {
     line-height: 145%;
     width: 100%;
     padding-bottom: 15px;
-
 }
+
 
 
 .icon-big {
@@ -303,9 +305,14 @@ input[type=button] {
     opacity: 0.8;
     margin-bottom: 10px;
 }
+
+
+
 .section-program .program-text {
     margin-bottom: 40px;
 }
+
+
 
 .program-text-1, 
 .program-text-2,
@@ -315,6 +322,7 @@ input[type=button] {
 }
 
 
+
 .friday,
 .saturday,
 .sunday {
@@ -322,12 +330,15 @@ input[type=button] {
     cursor: pointer;
 }
 
+
 /*---------SECTION-NATURE----------*/
+
 
 .section-nature,
 .section-2-nature {
     padding: 0;
 }
+
 
 .nature-view,
 .nature-2-view {
@@ -341,6 +352,7 @@ input[type=button] {
     display: block;
     float: left;
 }
+
 
 .nature-view li {
     width: 25%;
@@ -359,6 +371,7 @@ input[type=button] {
     overflow: hidden;
 }
 
+
 .nature-photo img,
 .nature-2-photo img {
     width: 100%;
@@ -376,6 +389,7 @@ input[type=button] {
     transition: transform 0.5s;
 }
 
+
 .nature-photo img:hover {
     opacity: 1;
     -webkit-opacity: 1;
@@ -386,7 +400,6 @@ input[type=button] {
     -o-transform: scale(1.03);
     transform: scale(1.03);
 }
-
 
 
 
@@ -404,23 +417,27 @@ input[type=button] {
     padding-right: 3%;
 }
 
+
 .about-box:last-child {
     text-align: left;
-    padding-left: 3%;
-    
+    padding-left: 3%; 
 }
+
 
 .about-picture {
     width: 100%;
 }
 
+
 .about-step {
     margin-bottom: 40px;
 }
 
+
 .about-step:last-of-type {
     margin-bottom: 80px;
 }
+
 
 .about-step div {
     color: #bb6a45;
@@ -433,8 +450,8 @@ input[type=button] {
 
 
 
-
 /*--------------PLACE-SECTION----------------*/
+
 
 .place-section {
     background-color: #eee;
@@ -450,10 +467,10 @@ input[type=button] {
     -o-opacity: 0.8;
 }
 
+
 .place-feature {
     margin-bottom: 7px;
 }
-
 
 
 .place-feature p{
@@ -475,9 +492,7 @@ input[type=button] {
 
 
 
-
 /*-------PHOTO-SECTION--------*/
-
 
 
 .photo-section {
@@ -496,7 +511,6 @@ input[type=button] {
 
 
 /*---------------ORGANISATION-SECTION I BOTTOM-SECTION------------*/
-
 
 
 .organisation-section {
@@ -546,7 +560,6 @@ input[type=button] {
 .organisation-box ul li {
     padding: 5px 0;
 }
-
 
 
 
@@ -611,6 +624,8 @@ footer p {
     color: #ddd;
 }
 
+
+
 /*----------------CONTACT FORM AND REGISTRATION FORM-----------------------*/
 
 /*-------------------FORM-SECTION-------------------*/
@@ -645,9 +660,11 @@ textarea {
 
 /*---------------------------REGISTRATION-SECTION----------------------------*/
 
+
 .registration-section {
    background-color: #eee;
 }
+
 
 #errors ul {
     list-style-type: none;
@@ -663,6 +680,7 @@ textarea {
 
 /*--------------SECTION-PROGRAM--------------*/
 
+
 .list-price ul {
     list-style: none;
 }
@@ -672,9 +690,11 @@ textarea {
     padding: 5px 0;
 }
 
+
 .list-price div{
  margin-bottom: 50px;
 }
+
 
 .heading-center {
     text-align: center;
@@ -682,16 +702,16 @@ textarea {
 
 
 
-
 /*--------------------SLIDER-----------------------*/
 
-.photos {
 
+.photos {
   width: 100%;
   height: 800px;
   overflow: hidden;
 
 }
+
 
 .photos img {
     display: none;
@@ -699,12 +719,14 @@ textarea {
     height: auto;
 }
 
+
 .photos .show {
   display: block;
 }
 
-/*--------------------BUTTON TO TOP-----------------------*/
 
+
+/*--------------------BUTTON TO TOP-----------------------*/
 
 
 #return-to-top {
@@ -732,21 +754,28 @@ textarea {
 
 }
 
+
 #return-to-top:hover {
     background: #ADFF2F;
 }
+
 
 #return-to-top:hover i {
     color: #fff;
     top: 6px;
 }
 
+
+
 /*------------------SORTING-------------------*/
+
 
 .sort {
     margin-bottom: 25px;
     margin-right: 25px;
 }
+
+
 .sort-name,
 .sort-price,
 .sort-price2 {
@@ -767,4 +796,3 @@ textarea {
     -ms-border-radius: 150px;
     -o-border-radius: 150px;
 }
-

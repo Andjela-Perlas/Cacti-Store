@@ -1,6 +1,6 @@
 # Cacti-Store
 
-Cacti - Web store for sale of cactus and decorative herbs
+Cacti - Web store for cactus and decorative herbs sale
 
 A list of used technologies:
 *
